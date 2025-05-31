@@ -2,13 +2,19 @@
 
 Console.WriteLine("--- Retangulo Contorno ---\n");
 
-Console.Write("Largura: ");
-largura = int.Parse(Console.ReadLine()!);
+do
+{
+    Console.Write("Largura: ");
+    largura = int.Parse(Console.ReadLine()!);
+} while (largura < 1 || largura > 10);
 
-Console.Write("Altura: ");
-altura = int.Parse(Console.ReadLine()!);
+do
+{
+    Console.Write("Altura: ");
+    altura = int.Parse(Console.ReadLine()!);
+} while (altura < 1 || altura > 10);
 
-Console.WriteLine("".PadRight(largura,'*'));
+Console.WriteLine("".PadRight(largura, '*'));
 
 for (int i = 1; i < altura - 1; i++)
 {
